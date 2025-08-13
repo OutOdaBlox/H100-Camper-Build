@@ -1,0 +1,41 @@
+Category,Item,Model/Spec,Qty,Vendor,Link,Unit Price (NZD),Extended (NZD),Notes
+Core electronics,MPPT,Victron SmartSolar MPPT 100/30,1,AA Solar,https://aasolar.co.nz/products/victron-smartsolar-mppt-100-30,399.00,399.00,LiFePO4 profile; Bluetooth built-in
+Core electronics,Inverter,Victron Phoenix 12/1000 VE.Direct,1,AA Solar,https://aasolar.co.nz/products/victron-phoenix-inverter-12-1000-ve-direct,799.00,799.00,Pure sine wave; 2000W peak
+Core electronics,DC-DC,Victron Orion-Tr Smart 12/12-30A Isolated,1,RS Components NZ,https://nz.rs-online.com/web/p/dc-dc-converters/1854419,310.00,310.00,Programmable via Bluetooth
+Core electronics,Battery monitor,Victron SmartShunt 500 A,1,AA Solar,https://aasolar.co.nz/products/victron-smartshunt-500a,299.00,299.00,Bluetooth monitoring
+Core electronics,External BMS,JK 4S LiFePO4 Smart BMS 200 A,1,TradeMe,https://www.trademe.co.nz/a/marketplace/electronics-photography/power-supplies-batteries/battery-chargers/listing/4340765123,230.00,230.00,With temperature sensors
+Core electronics,Main contactor,Albright SW200 12V 200A continuous,1,RS Components NZ,https://nz.rs-online.com/web/p/contactors/0351027,170.00,170.00,Heavy duty; suitable for battery isolation
+Protection and switching,Class-T fuse + holder,200A main fuse with holder,1,AME,https://www.ame.co.nz/marine-electrical/fuses-circuit-breakers/fuses-holders/anl-fuse-holder-with-200a-fuse,185.00,185.00,Main battery protection
+Protection and switching,Class-T or MEGA fuse + holder,150A inverter branch fuse with holder,1,Jaycar,https://www.jaycar.co.nz/150a-mega-fuse-and-holder-kit/p/SZ3728,110.00,110.00,Inverter circuit protection
+Protection and switching,MEGA fuses + holders,100A battery positive fuses with holders,2,Jaycar,https://www.jaycar.co.nz/100a-mega-fuse-and-holder-kit/p/SZ3726,45.00,90.00,Individual battery protection
+Protection and switching,MIDI fuse + holder,60A distribution feed fuse with holder,1,Jaycar,https://www.jaycar.co.nz/60a-midi-fuse-and-holder-kit/p/SZ3724,30.00,30.00,Distribution panel protection
+Protection and switching,Inline MC4 fuses,15A PV string fuses,2,Jaycar,https://www.jaycar.co.nz/15a-inline-mc4-solar-fuse-pair/p/SZ3732,15.00,30.00,Solar panel protection
+Protection and switching,Blade fuse assortment,5A/10A/15A/20A blade fuses,1,Jaycar,https://www.jaycar.co.nz/120-piece-automotive-blade-fuse-kit/p/SF2060,29.95,29.95,For various DC circuits
+Protection and switching,Mini relay,12V automotive SPST 30A,1,Jaycar,https://www.jaycar.co.nz/12v-30a-spdt-automotive-relay/p/SY4030,12.95,12.95,For contactor coil drive; includes flyback diode
+Protection and switching,Pre-charge resistor,1.5kΩ 10W,1,RS Components NZ,https://nz.rs-online.com/web/p/through-hole-fixed-resistors/7077666,10.00,10.00,Prevents inrush current damage
+Power distribution,Bus bars,Blue Sea 600A positive and negative,1,Burnsco,https://www.burnsco.co.nz/shop/electrical/bus-bars/blue-sea-powerbar-600a-bus-bar,100.00,100.00,High current distribution
+Power distribution,Fuse block,Blue Sea 12-circuit with negative bus,1,Burnsco,https://www.burnsco.co.nz/shop/electrical/circuit-protection/fuse-blocks/blue-sea-st-blade-fuse-block-12-circuit,95.00,95.00,DC circuit distribution
+Solar array and cabling,Solar panels,200W monocrystalline panels,2,TradeMe,https://www.trademe.co.nz/a/marketplace/building-renovation/electrical-lighting/solar-power/panels/listing/4325678912,290.00,580.00,High efficiency; suitable for marine/RV
+Solar array and cabling,MC4 Y-branch pair,MC4 parallel connectors,1,Jaycar,https://www.jaycar.co.nz/mc4-y-branch-parallel-connector-pair/p/ZM9094,25.00,25.00,For parallel panel connection
+Solar array and cabling,PV cable,6mm² (10 AWG) red/black solar cable,10,Jaycar,https://www.jaycar.co.nz/6mm-twin-core-solar-cable-per-metre/p/WH3086,6.00,60.00,UV resistant; per meter
+Solar array and cabling,Cable glands,IP67 weatherproof cable entry,1,Jaycar,https://www.jaycar.co.nz/ip67-cable-gland-kit-assorted-sizes/p/HP0724,27.50,27.50,Weatherproof roof penetration
+DC cabling and terminations,Battery cable,50mm² (1/0 AWG) red/black,4,TradeMe,https://www.trademe.co.nz/a/marketplace/motors/car-parts-accessories/electrical-wiring/wiring-looms-cables/listing/4338765432,25.00,100.00,Main battery connections; price per meter
+DC cabling and terminations,Battery cable,35mm² (2 AWG) red/black,4,TradeMe,https://www.trademe.co.nz/a/marketplace/motors/car-parts-accessories/electrical-wiring/wiring-looms-cables/listing/4336543278,20.00,80.00,Inverter feed; price per meter
+DC cabling and terminations,Cable,10mm² (8 AWG) red/black,4,Jaycar,https://www.jaycar.co.nz/10mm-auto-cable-red-per-metre/p/WH3045,10.00,40.00,MPPT and DC-DC connections; price per meter
+DC cabling and terminations,Cable,6mm² (10 AWG) red/black,6,Jaycar,https://www.jaycar.co.nz/6mm-auto-cable-red-per-metre/p/WH3043,6.50,39.00,Distribution feed; price per meter
+DC cabling and terminations,Cable,2.5mm² (14 AWG) red/black,10,Jaycar,https://www.jaycar.co.nz/2-5mm-auto-cable-red-per-metre/p/WH3041,3.00,30.00,General DC wiring; price per meter
+DC cabling and terminations,Cable,1.5mm² (16 AWG) red/black,5,Jaycar,https://www.jaycar.co.nz/1-5mm-auto-cable-red-per-metre/p/WH3040,2.25,11.25,Light circuits; price per meter
+DC cabling and terminations,Lugs assorted,50/35/10/6mm² with M8/M10 terminals,1,Jaycar,https://www.jaycar.co.nz/automotive-terminal-kit-175-pieces/p/PT4430,40.00,40.00,Assorted cable terminations
+DC cabling and terminations,Heatshrink,Adhesive-lined assorted sizes,1,Jaycar,https://www.jaycar.co.nz/adhesive-lined-heat-shrink-tubing-kit/p/WH5656,27.50,27.50,Weather-resistant connections
+DC cabling and terminations,Cable ties,UV-stable assorted sizes,1,Jaycar,https://www.jaycar.co.nz/uv-resistant-cable-ties-pack-of-100/p/HP1225,15.00,15.00,Secure cable routing
+DC cabling and terminations,Split conduit,10-20mm flexible conduit,10,Jaycar,https://www.jaycar.co.nz/16mm-split-corrugated-conduit-per-metre/p/WH5648,2.75,27.50,Cable protection; price per meter
+DC loads and outlets,12V/USB outlet,Dual USB-A + USB-C outlet,2,Jaycar,https://www.jaycar.co.nz/12v-socket-with-dual-usb-outlets/p/PS2134,30.00,60.00,Device charging
+DC loads and outlets,Water pump,Shurflo 3.0 GPM 12V pump,1,Burnsco,https://www.burnsco.co.nz/shop/plumbing/pumps/fresh-water-pumps/shurflo-trail-king-water-pump-12v-3-0gpm,199.00,199.00,Fresh water system
+DC loads and outlets,LED light kit,12V LED strip and puck lights,1,Jaycar,https://www.jaycar.co.nz/led-strip-light-kit-warm-white/p/ZD0579,40.00,40.00,Interior lighting
+AC hardware,2-pole RCD,30mA safety switch,1,Ideal Electrical,https://www.ideal.co.nz/shop/product/hpm-rcd240-30-2-pole-rcd-safety-switch-240v-40a-30ma,100.00,100.00,Electrical safety protection
+AC hardware,2-pole MCB,10A circuit breaker,1,Ideal Electrical,https://www.ideal.co.nz/shop/product/pdl-mcb210-miniature-circuit-breaker-2-pole-10a-c-curve,40.00,40.00,AC circuit protection
+AC hardware,Flush outlet,10A NZ standard outlet,1,PBTech,https://www.pbtech.co.nz/product/ADPPLD0240/PDL-Single-Power-Point-10A-White,17.50,17.50,AC power access
+AC hardware,Shore inlet (dashed placeholder),15A 230V marine inlet,1,Burnsco,https://www.burnsco.co.nz/shop/electrical/shore-power/inlets/marinco-15a-inlet-white,150.00,150.00,Future shore power option
+AC hardware,2-pole transfer switch (dashed placeholder),16A transfer switch,1,RS Components NZ,https://nz.rs-online.com/web/p/changeover-switches/1885115,80.00,80.00,Future shore/inverter selection
+Monitoring/config,VE.Direct to USB cable,Victron interface cable,1,AA Solar,https://aasolar.co.nz/products/victron-ve-direct-to-usb-interface,45.00,45.00,For programming/monitoring
+SUBTOTAL,,,,,,4,655.15,Prices vary; verify latest before purchase
