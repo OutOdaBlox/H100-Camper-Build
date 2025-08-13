@@ -1,0 +1,7 @@
+version: 1
+presets:
+  full_build:
+    project: H100-Camper-Build
+    prompt_file: tasks/full_build_prompt.md
+    repo_write: true
+    confirm: false
