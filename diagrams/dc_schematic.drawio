@@ -1,652 +1,125 @@
-<mxfile host="app.diagrams.net" modified="2025-08-13T12:00:00.000Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="1234567890" version="14.9.8" type="device">
-  <diagram id="dc_schematic" name="DC Schematic - 1996 Toyota Hiace Camper" pageWidth="1169" pageHeight="827">
-    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" agent="draw.io/28.0.6" version="28.0.6">
+  <diagram id="dc_schematic_r14c" name="H100 Camper - DC Schematic (R1.4c)">
+    <mxGraphModel dx="1200" dy="780" grid="1" gridSize="12" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1191" pageHeight="842" background="#ffffff" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        
-        <!-- Title and Notes -->
-        <mxCell id="title" value="DC ELECTRICAL SCHEMATIC - 1996 TOYOTA HIACE KZH100 CAMPER" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="284.5" y="20" width="600" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="note1" value="Configure Victron devices for LiFePO4: Absorption ~14.2 V, Float ~13.5 V; temp comp off." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="40" y="780" width="500" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="note2" value="JK BMS provides low-voltage disconnect via contactor; do not connect to Valence internal cells." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="40" y="800" width="500" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Battery Bank -->
-        <mxCell id="battery1" value="Valence U27-12XP&#xa;(Internal BMS)" style="shape=mxgraph.electrical.electro-mechanical.battery;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=12;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="80" y="200" width="100" height="60" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="battery2" value="Valence U27-12XP&#xa;(Internal BMS)" style="shape=mxgraph.electrical.electro-mechanical.battery;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=12;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="80" y="300" width="100" height="60" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="batteryLabel" value="2× Valence U27-12XP (parallel), internal BMS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="30" y="160" width="240" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Battery Fuses -->
-        <mxCell id="fuse1" value="MEGA&#xa;100A" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="200" y="210" width="50" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="fuse2" value="MEGA&#xa;100A" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="200" y="310" width="50" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- SmartShunt -->
-        <mxCell id="smartshunt" value="Victron SmartShunt 500A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="200" y="380" width="120" height="50" as="geometry" />
-        </mxCell>
-        
-        <!-- Main Fuse -->
-        <mxCell id="mainFuse" value="Class-T&#xa;200A" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="280" y="250" width="60" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Main Contactor -->
-        <mxCell id="contactor" value="Main Contactor&#xa;200A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;verticalAlign=top;fontStyle=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="380" y="240" width="100" height="40" as="geometry" />
-        </mxCell>
-        
-        <!-- Pre-charge Resistor -->
-        <mxCell id="precharge" value="1-2kΩ, 5-10W" style="shape=mxgraph.electrical.resistors.resistor_2;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalLabelPosition=bottom;verticalAlign=top;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="380" y="200" width="100" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="prechargeLabel" value="pre-charge for inverter capacitors (optional)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="380" y="180" width="220" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Bus Bars -->
-        <mxCell id="posBusBar" value="Positive Bus Bar (250A+)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffe6cc;strokeColor=#d79b00;verticalAlign=top;fontSize=12;fontStyle=1;horizontal=0;direction=south" vertex="1" parent="1">
-          <mxGeometry x="520" y="230" width="300" height="40" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="negBusBar" value="Negative Bus Bar (250A+)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;verticalAlign=top;fontSize=12;fontStyle=1;horizontal=0;direction=south" vertex="1" parent="1">
-          <mxGeometry x="520" y="380" width="300" height="40" as="geometry" />
-        </mxCell>
-        
-        <!-- JK BMS -->
-        <mxCell id="jkbms" value="JK 4S LiFePO4 Smart BMS (150-200A)&#xa;External BMS for contactor control only;&#xa;internal Valence BMS handles cell balancing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=top;fontSize=10;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="350" y="100" width="200" height="60" as="geometry" />
-        </mxCell>
-        
-        <!-- Interposing Relay -->
-        <mxCell id="relay" value="Mini&#xa;Relay" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="400" y="180" width="60" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- Relay Fuse -->
-        <mxCell id="relayFuse" value="2A" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="520" y="185" width="30" height="15" as="geometry" />
-        </mxCell>
-        
-        <!-- Vehicle Battery -->
-        <mxCell id="vehicleBattery" value="Vehicle&#xa;Starter Battery" style="shape=mxgraph.electrical.electro-mechanical.battery;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="80" y="500" width="100" height="60" as="geometry" />
-        </mxCell>
-        
-        <!-- DC-DC Converter -->
-        <mxCell id="dcdc" value="Victron Orion-Tr Smart&#xa;12/12-30A (isolated)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="300" y="500" width="160" height="60" as="geometry" />
-        </mxCell>
-        
-        <!-- DC-DC Fuses -->
-        <mxCell id="dcdcInFuse" value="40A" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="200" y="510" width="40" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="dcdcOutFuse" value="40A" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="500" y="510" width="40" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Solar Panels -->
-        <mxCell id="solarPanel1" value="200W Solar Panel" style="shape=mxgraph.electrical.abstract.amplifier;html=1;fillColor=#ffcccc;strokeColor=#36393d;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="80" y="620" width="100" height="60" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="solarPanel2" value="200W Solar Panel" style="shape=mxgraph.electrical.abstract.amplifier;html=1;fillColor=#ffcccc;strokeColor=#36393d;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="200" y="620" width="100" height="60" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="solarLabel" value="400W Solar Array (Parallel, ~18-22V)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="80" y="590" width="240" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Solar Fuses -->
-        <mxCell id="solarFuse1" value="15A MC4" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="130" y="700" width="40" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="solarFuse2" value="15A MC4" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="250" y="700" width="40" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- MPPT Controller -->
-        <mxCell id="mppt" value="Victron SmartSolar&#xa;MPPT 100/30" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="350" y="650" width="120" height="60" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="mpptFuse" value="40A" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="500" y="660" width="40" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- DC Distribution -->
-        <mxCell id="dcDist" value="Fused Distribution Block&#xa;(Blue Sea 12-circuit)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;fontStyle=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="700" y="500" width="160" height="100" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="dcDistFuse" value="MIDI&#xa;60A" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="640" y="520" width="40" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- DC Loads -->
-        <mxCell id="waterPump" value="Water Pump&#xa;10A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="900" y="480" width="80" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="lights" value="Lights&#xa;5A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="900" y="520" width="80" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="usbA" value="12V/USB A&#xa;15A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="900" y="560" width="80" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="usbC" value="12V/USB C&#xa;15A" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="900" y="600" width="80" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- Inverter -->
-        <mxCell id="inverter" value="Victron Phoenix 12/1000&#xa;Pure Sine Inverter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontStyle=1;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="700" y="300" width="160" height="60" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="inverterFuse" value="Class-T&#xa;150A" style="shape=mxgraph.electrical.electro-mechanical.fuse_2;html=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="640" y="310" width="40" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="chassis" value="Vehicle Chassis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="900" y="330" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- Connections -->
-        <!-- Battery to Bus -->
-        <mxCell id="bat1ToFuse" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="battery1" target="fuse1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="190" y="230" as="sourcePoint" />
-            <mxPoint x="240" y="180" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bat1ToFuseLabel" value="35 mm² (2 AWG)&#xa;~0.3 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="150" y="190" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="bat2ToFuse" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="battery2" target="fuse2">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="190" y="330" as="sourcePoint" />
-            <mxPoint x="240" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="bat2ToFuseLabel" value="35 mm² (2 AWG)&#xa;~0.3 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="150" y="290" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- Fuses to Main Fuse -->
-        <mxCell id="fuse1ToMain" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="fuse1" target="mainFuse">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="260" y="220" as="sourcePoint" />
-            <mxPoint x="280" y="260" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="260" y="220" />
-              <mxPoint x="260" y="260" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="fuse2ToMain" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=3;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="fuse2">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="260" y="320" as="sourcePoint" />
-            <mxPoint x="260" y="260" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="260" y="320" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mainFuseLabel" value="50 mm² (1/0 AWG)&#xa;~0.3 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="250" y="290" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- Main Fuse to Contactor -->
-        <mxCell id="mainToContactor" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="mainFuse" target="contactor">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="350" y="260" as="sourcePoint" />
-            <mxPoint x="380" y="260" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mainToContactorLabel" value="50 mm² (1/0 AWG)&#xa;~0.2 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="340" y="270" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- Contactor to Bus -->
-        <mxCell id="contactorToBus" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="contactor" target="posBusBar">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="490" y="260" as="sourcePoint" />
-            <mxPoint x="520" y="250" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="contactorToBusLabel" value="50 mm² (1/0 AWG)&#xa;~0.3 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="480" y="230" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- Pre-charge path -->
-        <mxCell id="prechargeConn1" value="" style="endArrow=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="precharge">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="370" y="210" as="sourcePoint" />
-            <mxPoint x="350" y="260" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="350" y="210" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="prechargeConn2" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="precharge">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="490" y="210" as="sourcePoint" />
-            <mxPoint x="510" y="260" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="510" y="210" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Battery Negatives to SmartShunt -->
-        <mxCell id="bat1Neg" value="" style="endArrow=classic;html=1;strokeWidth=3;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="130" y="260" as="sourcePoint" />
-            <mxPoint x="130" y="380" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="130" y="320" />
-              <mxPoint x="130" y="380" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="bat2Neg" value="" style="endArrow=classic;html=1;strokeWidth=3;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="130" y="360" as="sourcePoint" />
-            <mxPoint x="130" y="380" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="batNegToShunt" value="" style="endArrow=classic;html=1;strokeWidth=3;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" target="smartshunt">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="130" y="380" as="sourcePoint" />
-            <mxPoint x="200" y="380" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="batNegLabel" value="35 mm² (2 AWG)&#xa;~0.3 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="130" y="380" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- SmartShunt to Negative Bus -->
-        <mxCell id="shuntToBus" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="smartshunt" target="negBusBar">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="330" y="405" as="sourcePoint" />
-            <mxPoint x="520" y="400" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="shuntToBusLabel" value="35 mm² (2 AWG)&#xa;~0.3 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="350" y="380" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- JK BMS Connections -->
-        <mxCell id="jkToBat" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;strokeWidth=1;" edge="1" parent="1" source="jkbms" target="battery1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="350" y="130" as="sourcePoint" />
-            <mxPoint x="80" y="200" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="80" y="130" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="jkToBatLabel" value="Sense wires" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="80" y="110" width="100" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="jkToRelay" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;strokeWidth=1;" edge="1" parent="1" source="jkbms" target="relay">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="450" y="160" as="sourcePoint" />
-            <mxPoint x="430" y="180" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="jkToRelayLabel" value="Control" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="460" y="160" width="40" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="relayToContactor" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;strokeWidth=1;" edge="1" parent="1" source="relay" target="contactor">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="430" y="210" as="sourcePoint" />
-            <mxPoint x="430" y="240" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="relayPower" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="relayFuse" target="relay">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="520" y="192" as="sourcePoint" />
-            <mxPoint x="460" y="192" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="relayFusePower" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="relayFuse" target="posBusBar">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="550" y="192" as="sourcePoint" />
-            <mxPoint x="670" y="192" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="670" y="192" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Vehicle Battery to DC-DC -->
-        <mxCell id="vehToDCDC" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="vehicleBattery" target="dcdcInFuse">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="180" y="530" as="sourcePoint" />
-            <mxPoint x="200" y="520" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vehToDCDCLabel" value="6 mm² (10 AWG)&#xa;~1.5 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="150" y="490" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="dcdcInToOrion" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="dcdcInFuse" target="dcdc">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="240" y="520" as="sourcePoint" />
-            <mxPoint x="300" y="530" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- DC-DC to Bus -->
-        <mxCell id="dcdcToFuse" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="dcdc" target="dcdcOutFuse">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="460" y="530" as="sourcePoint" />
-            <mxPoint x="500" y="520" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="dcdcFuseToBus" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="dcdcOutFuse" target="posBusBar">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="540" y="520" as="sourcePoint" />
-            <mxPoint x="670" y="270" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="670" y="520" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="dcdcOutLabel" value="6 mm² (10 AWG)&#xa;~1.5 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="570" y="490" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="dcdcNeg" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" target="negBusBar">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="560" as="sourcePoint" />
-            <mxPoint x="670" y="420" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="380" y="580" />
-              <mxPoint x="670" y="580" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Solar to MPPT -->
-        <mxCell id="solar1ToY" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="solarPanel1" target="solarFuse1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="130" y="680" as="sourcePoint" />
-            <mxPoint x="130" y="710" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="130" y="710" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="solar2ToY" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="solarPanel2" target="solarFuse2">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="250" y="680" as="sourcePoint" />
-            <mxPoint x="250" y="710" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="250" y="710" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="solarYBranch" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="solarFuse1" target="mppt">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="170" y="710" as="sourcePoint" />
-            <mxPoint x="350" y="680" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="200" y="710" />
-              <mxPoint x="200" y="730" />
-              <mxPoint x="330" y="730" />
-              <mxPoint x="330" y="680" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="solarY2Branch" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="solarFuse2">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="290" y="710" as="sourcePoint" />
-            <mxPoint x="200" y="730" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="290" y="710" />
-              <mxPoint x="290" y="730" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="solarCableLabel" value="6 mm² (10 AWG)&#xa;~3 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="230" y="730" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- MPPT to Bus -->
-        <mxCell id="mpptToFuse" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="mppt" target="mpptFuse">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="470" y="680" as="sourcePoint" />
-            <mxPoint x="500" y="670" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="mpptFuseToBus" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="mpptFuse">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="540" y="670" as="sourcePoint" />
-            <mxPoint x="670" y="520" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="580" y="670" />
-              <mxPoint x="580" y="520" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mpptOutLabel" value="6 mm² (10 AWG)&#xa;~1 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="540" y="640" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="mpptNeg" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="mppt">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="410" y="710" as="sourcePoint" />
-            <mxPoint x="670" y="580" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="410" y="730" />
-              <mxPoint x="600" y="730" />
-              <mxPoint x="600" y="580" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Bus to DC Distribution -->
-        <mxCell id="busToDCDistFuse" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" target="dcDistFuse">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="670" y="520" as="sourcePoint" />
-            <mxPoint x="640" y="530" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="dcDistFuseToDist" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="dcDistFuse" target="dcDist">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="680" y="530" as="sourcePoint" />
-            <mxPoint x="700" y="550" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="dcDistLabel" value="10 mm² (8 AWG)&#xa;~1 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="640" y="490" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="dcDistNeg" value="" style="endArrow=classic;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="780" y="600" as="sourcePoint" />
-            <mxPoint x="670" y="580" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="780" y="620" />
-              <mxPoint x="620" y="620" />
-              <mxPoint x="620" y="580" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- DC Distribution to Loads -->
-        <mxCell id="distToWaterPump" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="dcDist" target="waterPump">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="860" y="525" as="sourcePoint" />
-            <mxPoint x="900" y="495" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="waterPumpLabel" value="2.5 mm² (14 AWG)&#xa;~3 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="860" y="450" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="distToLights" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.4;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="dcDist" target="lights">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="860" y="540" as="sourcePoint" />
-            <mxPoint x="900" y="535" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="lightsLabel" value="1.5 mm² (16 AWG)&#xa;~1 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="860" y="520" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="distToUSBA" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.6;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="dcDist" target="usbA">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="860" y="560" as="sourcePoint" />
-            <mxPoint x="900" y="575" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="usbALabel" value="2.5 mm² (14 AWG)&#xa;~1 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="860" y="560" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="distToUSBC" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="dcDist" target="usbC">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="860" y="575" as="sourcePoint" />
-            <mxPoint x="900" y="615" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="usbCLabel" value="2.5 mm² (14 AWG)&#xa;~1 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="860" y="600" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <!-- Bus to Inverter -->
-        <mxCell id="busToInvFuse" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" target="inverterFuse">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="670" y="320" as="sourcePoint" />
-            <mxPoint x="640" y="320" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="invFuseToInv" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="inverterFuse" target="inverter">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="680" y="320" as="sourcePoint" />
-            <mxPoint x="700" y="330" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="invLabel" value="35 mm² (2 AWG)&#xa;~1 m" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="640" y="290" width="100" height="30" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="invNeg" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="inverter">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="780" y="360" as="sourcePoint" />
-            <mxPoint x="670" y="380" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="780" y="380" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Inverter to Chassis -->
-        <mxCell id="invToChassis" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="inverter" target="chassis">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="860" y="330" as="sourcePoint" />
-            <mxPoint x="900" y="345" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="chassisLabel" value="16 mm² (6 AWG)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="860" y="310" width="100" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Remote On/Off for DC-DC -->
-        <mxCell id="ignition" value="Ignition/D+" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="300" y="450" width="80" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="ignitionToDCDC" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;dashed=1;strokeWidth=1;" edge="1" parent="1" source="ignition" target="dcdc">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="340" y="470" as="sourcePoint" />
-            <mxPoint x="340" y="500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ignitionLabel" value="Remote on/off" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="340" y="470" width="80" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Legend -->
-        <mxCell id="legend" value="LEGEND" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="900" y="680" width="100" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="redLine" value="" style="endArrow=none;html=1;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="920" y="720" as="sourcePoint" />
-            <mxPoint x="950" y="720" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="redLineLabel" value="Positive DC" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="960" y="710" width="100" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="purpleLine" value="" style="endArrow=none;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="920" y="740" as="sourcePoint" />
-            <mxPoint x="950" y="740" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="purpleLineLabel" value="Negative DC" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="960" y="730" width="100" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="dashedLine" value="" style="endArrow=none;html=1;strokeWidth=1;dashed=1;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="920" y="760" as="sourcePoint" />
-            <mxPoint x="950" y="760" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="dashedLineLabel" value="Control/Signal" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="960" y="750" width="100" height="20" as="geometry" />
-        </mxCell>
-        
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Layers -->
+        <mxCell id="layer_wiring" value="Wiring" parent="1" layer="1"/>
+        <mxCell id="layer_labels" value="Labels" parent="1" layer="1"/>
+        <mxCell id="layer_legend" value="Legend" parent="1" layer="1"/>
+        <mxCell id="layer_contents" value="Contents" parent="1" layer="1"/>
+        <mxCell id="layer_notes" value="Notes" parent="1" visible="0" layer="1"/>
+
+        <!-- Title/Rev -->
+        <mxCell id="title" value="H100 Camper - DC Schematic" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;strokeColor=none;fillColor=none;" parent="layer_labels" vertex="1"><mxGeometry x="430" y="30" width="330" height="30" as="geometry"/></mxCell>
+        <mxCell id="rev" value="Revision: R1.4c  Date: 2025-08-15" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_labels" vertex="1"><mxGeometry x="940" y="790" width="220" height="20" as="geometry"/></mxCell>
+
+        <!-- DC Buses -->
+        <mxCell id="pos_bus" value="" style="shape=line;strokeColor=#ff0000;strokeWidth=3;endArrow=none;" parent="layer_wiring" vertex="1"><mxGeometry x="120" y="180" width="850" height="1" as="geometry"/></mxCell>
+        <mxCell id="neg_bus" value="" style="shape=line;strokeColor=#000000;strokeWidth=3;endArrow=none;" parent="layer_wiring" vertex="1"><mxGeometry x="120" y="420" width="850" height="1" as="geometry"/></mxCell>
+        <mxCell id="pos_bus_label" value="+ Bus >=250A" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;strokeColor=none;fillColor=none;fontColor=#ff0000;" parent="layer_labels" vertex="1"><mxGeometry x="120" y="160" width="140" height="20" as="geometry"/></mxCell>
+        <mxCell id="neg_bus_label" value="- Bus >=250A" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;strokeColor=none;fillColor=none;" parent="layer_labels" vertex="1"><mxGeometry x="120" y="400" width="140" height="20" as="geometry"/></mxCell>
+
+        <!-- Storage lane -->
+        <mxCell id="battery1" value="Battery #1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666;fillColor=#f5f5f5;" parent="layer_wiring" vertex="1"><mxGeometry x="120" y="250" width="100" height="50" as="geometry"/></mxCell>
+        <mxCell id="battery2" value="Battery #2" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666;fillColor=#f5f5f5;" parent="layer_wiring" vertex="1"><mxGeometry x="240" y="250" width="100" height="50" as="geometry"/></mxCell>
+        <mxCell id="fuse_b1" value="MEGA 100A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="140" y="220" width="60" height="20" as="geometry"/></mxCell>
+        <mxCell id="fuse_b2" value="MEGA 100A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="260" y="220" width="60" height="20" as="geometry"/></mxCell>
+        <mxCell id="main_contactor" value="Contactor >=200A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=10;" parent="layer_wiring" vertex="1"><mxGeometry x="360" y="200" width="110" height="30" as="geometry"/></mxCell>
+        <mxCell id="smartshunt" value="SmartShunt 500A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=10;" parent="layer_wiring" vertex="1"><mxGeometry x="200" y="440" width="120" height="30" as="geometry"/></mxCell>
+
+        <!-- Storage wiring (orthogonal, side entry/exit) -->
+        <mxCell id="b1_to_fuse" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="battery1" target="fuse_b1" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="b2_to_fuse" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="battery2" target="fuse_b2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="f1_to_cont" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="fuse_b1" target="main_contactor" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="f2_to_cont" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="fuse_b2" target="main_contactor" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cont_to_posbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="main_contactor" target="pos_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="b1neg_to_shunt" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;strokeColor=#000000;strokeWidth=2;" parent="layer_wiring" source="battery1" target="smartshunt" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="b2neg_to_shunt" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;strokeColor=#000000;strokeWidth=2;" parent="layer_wiring" source="battery2" target="smartshunt" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="shunt_to_negbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=none;strokeColor=#000000;strokeWidth=2;" parent="layer_wiring" source="smartshunt" target="neg_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- Charging lane: 2x200W PV (Series) -> Roof gland -> PV Isolator -> MPPT -->
+        <mxCell id="pv_p1" value="Panel 1 (200W)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#006699;fillColor=#e6f3ff;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="470" y="60" width="90" height="24" as="geometry"/></mxCell>
+        <mxCell id="pv_p2" value="Panel 2 (200W)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#006699;fillColor=#e6f3ff;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="470" y="90" width="90" height="24" as="geometry"/></mxCell>
+        <mxCell id="pv_series" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;strokeColor=#006699;strokeWidth=1.5;" parent="layer_wiring" source="pv_p1" target="pv_p2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pv_roof_gland" value="Roof gland" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666;fillColor=#f0f0f0;fontSize=8;" parent="layer_wiring" vertex="1"><mxGeometry x="600" y="75" width="80" height="24" as="geometry"/></mxCell>
+        <mxCell id="pv_out_to_gland" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;strokeColor=#006699;strokeWidth=1.5;" parent="layer_wiring" source="pv_p2" target="pv_roof_gland" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="pv_isolator" value="PV Isolator" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="520" y="220" width="90" height="24" as="geometry"/></mxCell>
+        <mxCell id="gland_to_isolator" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;strokeColor=#006699;strokeWidth=1.5;" parent="layer_wiring" source="pv_roof_gland" target="pv_isolator" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="mppt" value="MPPT" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=10;" parent="layer_wiring" vertex="1"><mxGeometry x="520" y="280" width="110" height="40" as="geometry"/></mxCell>
+        <mxCell id="isol_to_mppt" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" parent="layer_wiring" source="pv_isolator" target="mppt" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="mppt_fuse" value="60A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="520" y="360" width="50" height="20" as="geometry"/></mxCell>
+        <mxCell id="mppt_to_fuse" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="mppt" target="mppt_fuse" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mpptfuse_to_posbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="mppt_fuse" target="pos_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mppt_to_negbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;strokeColor=#000000;strokeWidth=2;" parent="layer_wiring" source="mppt" target="neg_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- DC-DC charger -->
+        <mxCell id="dcdc" value="DC-DC" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=10;" parent="layer_wiring" vertex="1"><mxGeometry x="680" y="280" width="110" height="40" as="geometry"/></mxCell>
+        <mxCell id="dcdc_fuse_in" value="60A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="680" y="240" width="50" height="20" as="geometry"/></mxCell>
+        <mxCell id="dcdc_fuse_out" value="60A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="680" y="360" width="50" height="20" as="geometry"/></mxCell>
+        <mxCell id="dcdc_out_to_posbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="dcdc_fuse_out" target="pos_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="dcdc_to_negbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;strokeColor=#000000;strokeWidth=2;" parent="layer_wiring" source="dcdc" target="neg_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- Loads -->
+        <mxCell id="inverter" value="Inverter" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=10;" parent="layer_wiring" vertex="1"><mxGeometry x="520" y="480" width="110" height="40" as="geometry"/></mxCell>
+        <mxCell id="inv_fuse" value="Class-T 200A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="480" y="480" width="80" height="20" as="geometry"/></mxCell>
+        <mxCell id="inv_to_fuse" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="inverter" target="inv_fuse" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="invfuse_to_posbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="inv_fuse" target="pos_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="inv_to_negbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;strokeColor=#000000;strokeWidth=2;" parent="layer_wiring" source="inverter" target="neg_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="dist_panel" value="12V Fuse Block" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=10;" parent="layer_wiring" vertex="1"><mxGeometry x="680" y="480" width="120" height="60" as="geometry"/></mxCell>
+        <mxCell id="dist_fuse" value="MIDI 60A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="640" y="490" width="60" height="20" as="geometry"/></mxCell>
+        <mxCell id="dist_to_fuse" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="dist_panel" target="dist_fuse" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="distfuse_to_posbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="dist_fuse" target="pos_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="dist_to_negbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;strokeColor=#000000;strokeWidth=2;" parent="layer_wiring" source="dist_panel" target="neg_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- Wire-gauge pills -->
+        <mxCell id="pill_main" value="2/0 AWG (70-95 mm2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b3b3b3;strokeWidth=1;fontSize=9;align=center;verticalAlign=middle;" parent="layer_labels" vertex="1"><mxGeometry x="760" y="120" width="150" height="22" as="geometry"/></mxCell>
+        <mxCell id="lead_main" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;dashed=1;endArrow=none;strokeColor=#999999;strokeWidth=1;" parent="layer_wiring" source="pill_main" target="pos_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pill_mppt" value="6 AWG (13 mm2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b3b3b3;strokeWidth=1;fontSize=9;align=center;verticalAlign=middle;" parent="layer_labels" vertex="1"><mxGeometry x="600" y="405" width="120" height="20" as="geometry"/></mxCell>
+        <mxCell id="lead_mppt" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;dashed=1;endArrow=none;strokeColor=#999999;strokeWidth=1;" parent="layer_wiring" source="pill_mppt" target="mppt_fuse" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pill_dcdc" value="6 AWG (13 mm2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b3b3b3;strokeWidth=1;fontSize=9;align=center;verticalAlign=middle;" parent="layer_labels" vertex="1"><mxGeometry x="780" y="345" width="120" height="20" as="geometry"/></mxCell>
+        <mxCell id="lead_dcdc" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;dashed=1;endArrow=none;strokeColor=#999999;strokeWidth=1;" parent="layer_wiring" source="pill_dcdc" target="dcdc_fuse_out" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pill_inverter" value="2/0 AWG (70-95 mm2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b3b3b3;strokeWidth=1;fontSize=9;align=center;verticalAlign=middle;" parent="layer_labels" vertex="1"><mxGeometry x="430" y="540" width="150" height="22" as="geometry"/></mxCell>
+        <mxCell id="lead_inverter" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;dashed=1;endArrow=none;strokeColor=#999999;strokeWidth=1;" parent="layer_wiring" source="pill_inverter" target="inv_fuse" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- Legend (visible) -->
+        <mxCell id="legend_box" value="" style="rounded=1;strokeColor=#888;fillColor=#fafafa;" parent="layer_legend" vertex="1"><mxGeometry x="865" y="520" width="200" height="180" as="geometry"/></mxCell>
+        <mxCell id="legend_title" value="Legend / Key" style="text;html=1;align=left;verticalAlign=top;fontSize=11;fontStyle=1;strokeColor=none;fillColor=none;" parent="layer_legend" vertex="1"><mxGeometry x="880" y="530" width="170" height="20" as="geometry"/></mxCell>
+        <mxCell id="legend_pos" value="Red line: DC +" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_legend" vertex="1"><mxGeometry x="880" y="555" width="170" height="18" as="geometry"/></mxCell>
+        <mxCell id="legend_neg" value="Black line: DC -" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_legend" vertex="1"><mxGeometry x="880" y="575" width="170" height="18" as="geometry"/></mxCell>
+        <mxCell id="legend_fuse" value="Yellow box: Fuse/Breaker" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_legend" vertex="1"><mxGeometry x="880" y="595" width="170" height="18" as="geometry"/></mxCell>
+        <mxCell id="legend_device" value="White box: Device" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_legend" vertex="1"><mxGeometry x="880" y="615" width="170" height="18" as="geometry"/></mxCell>
+        <mxCell id="legend_pill" value="White pill: Wire gauge label" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_legend" vertex="1"><mxGeometry x="880" y="635" width="170" height="18" as="geometry"/></mxCell>
+        <mxCell id="legend_leader" value="Grey dashed: Leader line" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_legend" vertex="1"><mxGeometry x="880" y="655" width="170" height="18" as="geometry"/></mxCell>
+        <mxCell id="legend_pv" value="Blue: PV wiring/blocks" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_legend" vertex="1"><mxGeometry x="880" y="675" width="170" height="18" as="geometry"/></mxCell>
+
+        <!-- Contents (bottom-left, expanded) -->
+        <mxCell id="contents_box" value="" style="rounded=1;strokeColor=#888;fillColor=#ffffff;" parent="layer_contents" vertex="1"><mxGeometry x="40" y="540" width="360" height="250" as="geometry"/></mxCell>
+        <mxCell id="contents_title" value="Contents (brand / model)" style="text;html=1;align=left;verticalAlign=top;fontSize=11;fontStyle=1;strokeColor=none;fillColor=none;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="550" width="330" height="20" as="geometry"/></mxCell>
+        <mxCell id="c_batts" value="Batteries: Valence U27-12 (x2)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="570" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_bms" value="BMS: JK BMS 8S 2A active balancer" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="588" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_cont" value="Main contactor: TE EV200 (12V coil)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="606" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_shunt" value="Shunt: Victron SmartShunt 500A" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="624" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_mppt" value="MPPT: Victron SmartSolar 100/30" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="642" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_dcdc" value="DC-DC: Victron Orion-Tr Smart 12/12-30A" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="660" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_inverter" value="Inverter/Charger: Victron MultiPlus 12/2000" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="678" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_isol" value="PV Isolator: DC isolator (per system spec)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="696" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_fuseblk" value="12V Fuse Block: Blue Sea 5029" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="714" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_busbar" value="Bus Bars: Blue Sea 2104 / 2105" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="732" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_panels" value="Solar: 2 x 200W panels (series)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="750" width="330" height="18" as="geometry"/></mxCell>
+
+        <!-- Notes (hidden) -->
+        <mxCell id="note_pv" value="PV shown 2x200W in series. If parallel, add branch fuses and adjust wiring." style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_notes" vertex="1"><mxGeometry x="120" y="720" width="880" height="20" as="geometry"/></mxCell>
+        <mxCell id="note_bms" value="JK BMS controls main contactor for LVD/HVD. Coil supply on fused protected circuit." style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_notes" vertex="1"><mxGeometry x="120" y="740" width="880" height="20" as="geometry"/></mxCell>
+        <mxCell id="note_val" value="Valence internal BMS is not a primary load disconnect." style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_notes" vertex="1"><mxGeometry x="120" y="760" width="880" height="20" as="geometry"/></mxCell>
+
       </root>
     </mxGraphModel>
   </diagram>
