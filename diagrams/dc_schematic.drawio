@@ -15,7 +15,7 @@
 
         <!-- Title/Rev -->
         <mxCell id="title" value="H100 Camper - DC Schematic" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;strokeColor=none;fillColor=none;" parent="layer_labels" vertex="1"><mxGeometry x="430" y="30" width="330" height="30" as="geometry"/></mxCell>
-        <mxCell id="rev" value="Revision: R1.4c  Date: 2025-08-15" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_labels" vertex="1"><mxGeometry x="940" y="790" width="220" height="20" as="geometry"/></mxCell>
+        <mxCell id="rev" value="Revision: R1.4c  Date: 2025-08-16" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;strokeColor=none;fillColor=none;" parent="layer_labels" vertex="1"><mxGeometry x="940" y="790" width="220" height="20" as="geometry"/></mxCell>
 
         <!-- DC Buses -->
         <mxCell id="pos_bus" value="" style="shape=line;strokeColor=#ff0000;strokeWidth=3;endArrow=none;" parent="layer_wiring" vertex="1"><mxGeometry x="120" y="180" width="850" height="1" as="geometry"/></mxCell>
