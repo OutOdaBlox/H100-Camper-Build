@@ -1,5 +1,7 @@
 # Safety (R1.4c)
 
+Updated: 2025-08-16
+
 General
 - Follow device manuals and local electrical regulations.
 - De-energize before service; confirm with meter; use PPE.

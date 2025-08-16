@@ -1,5 +1,7 @@
 # H100 Camper Electrical – Installation (R1.4c)
 
+Updated: 2025-08-16
+
 Summary
 - Batteries: Valence U27-12 (x2)
 - BMS: JK BMS 8S 2A (controls TE EV200 contactor)
