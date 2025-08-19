@@ -1,4 +1,4 @@
-# H100 Camper Electrical – Installation (R1.4c)
+﻿# H100 Camper Electrical â€“ Installation (R1.4c)
 
 Updated: 2025-08-16
 
@@ -7,8 +7,8 @@ Summary
 - BMS: JK BMS 8S 2A (controls TE EV200 contactor)
 - MPPT: Victron SmartSolar 100/30
 - DC-DC: Victron Orion-Tr Smart 12/12-30A
-- Inverter/Charger: Victron MultiPlus 12/2000
-- Solar: 2 × 200 W in series, PV isolator, SmartShunt 500A
+- Inverter: Victron Phoenix Inverter Smart 12/1200
+- Solar: 2 Ã— 200 W in series, PV isolator, SmartShunt 500A
 - 12V Distribution: Blue Sea 5029, bus bars Blue Sea 2104/2105
 
 Wiring Notes
@@ -18,9 +18,9 @@ Wiring Notes
 - Inverter fuse: Class-T 200 A near + bus.
 - Distribution/MPPT/DC-DC fuses: 60 A typical (adjust per device spec).
 
-PV (2 × 200 W, series)
+PV (2 Ã— 200 W, series)
 1. Wire panels in series on the roof (Panel 1 + to Panel 2 -).
-2. Bring pair into roof gland → PV isolator → MPPT PV IN.
+2. Bring pair into roof gland â†’ PV isolator â†’ MPPT PV IN.
 3. Confirm MPPT 100/30 voltage/current limits are respected.
 
 SmartShunt
@@ -29,7 +29,7 @@ SmartShunt
 
 Contactor & JK BMS
 1. Place TE EV200 in battery positive path before + bus.
-2. Power coil from protected fused feed (1–3 A fuse typical).
+2. Power coil from protected fused feed (1â€“3 A fuse typical).
 3. JK BMS output drives coil via control relay (per JK wiring).
 4. Configure LVD/HVD/Temp in JK app.
 
@@ -40,3 +40,4 @@ Commissioning
 4. Power MultiPlus and verify AC output with no loads.
 5. Check charge sources (MPPT, DC-DC) current and voltage.
 6. Record baseline values in SmartShunt.
+

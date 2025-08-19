@@ -1,4 +1,4 @@
-# {{specs.project}} – Installation ({{specs.version}})
+﻿# {{specs.project}} â€“ Installation ({{specs.version}})
 
 Updated: {{specs.updatedDate}}{{#unless specs.updatedDate}}(set specs.updatedDate in specs.yaml){{/unless}}
 
@@ -7,8 +7,8 @@ Summary
 - BMS: {{specs.bms.model}} (controls {{specs.bms.control}})
 - MPPT: {{specs.pv.controller.model}}
 - DC-DC: {{specs.alternator.dcdc.model}}
-- Inverter/Charger: {{specs.inverter.model}}
-- Solar: {{specs.pv.panels.count}} × {{specs.pv.panels.watt}} W ({{specs.pv.panels.wiring}})
+- Inverter: {{specs.inverter.model}}
+- Solar: {{specs.pv.panels.count}} Ã— {{specs.pv.panels.watt}} W ({{specs.pv.panels.wiring}})
 - 12 V Distribution: {{specs.low_voltage_distribution.fuse_block}}, bus bars {{specs.low_voltage_distribution.bus_bars.positive}} / {{specs.low_voltage_distribution.bus_bars.negative}}
 
 Wiring Notes
@@ -16,8 +16,8 @@ Wiring Notes
 - MPPT / DC-DC: {{specs.wiring.branch_cable}} typical (adjust per length and current).
 - Confirm device fuse sizes per manufacturer; adjust for region {{specs.region}}.
 
-PV ({{specs.pv.panels.count}} × {{specs.pv.panels.watt}} W, {{specs.pv.panels.wiring}})
-1. Wire panels per configuration (roof → gland → PV isolator → MPPT IN).
+PV ({{specs.pv.panels.count}} Ã— {{specs.pv.panels.watt}} W, {{specs.pv.panels.wiring}})
+1. Wire panels per configuration (roof â†’ gland â†’ PV isolator â†’ MPPT IN).
 2. Confirm MPPT voltage/current limits are respected.
 
 SmartShunt
@@ -37,3 +37,4 @@ Commissioning
 4. Power inverter/charger and verify AC output with no loads.
 5. Check charge sources current / voltage.
 6. Record baseline values in shunt/monitoring.
+

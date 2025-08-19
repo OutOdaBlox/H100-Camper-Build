@@ -1,4 +1,4 @@
-# Safety (R1.4c)
+﻿# Safety (R1.4c)
 
 Updated: 2025-08-16
 
@@ -24,3 +24,4 @@ Grounding/Bonding
 PV
 - PV isolator DC-rated; treat connectors live in sunlight.
 - Use UV-rated 10 AWG (6 mm2) PV cable and MC4 connectors.
+
