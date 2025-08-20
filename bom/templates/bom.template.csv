@@ -5,7 +5,7 @@ Main Contactor,,{{specs.bms.control}},High-current DC contactor,1,Fused coil sup
 Shunt,Victron,SmartShunt 500A,Battery monitor shunt with Bluetooth,1,
 MPPT,{{#if specs.pv.controller.model}}Victron{{/if}},{{specs.pv.controller.model}},Solar charge controller,1,Sized for {{specs.pv.panels.count}}x{{specs.pv.panels.watt}}W ({{specs.pv.panels.wiring}})
 DC-DC Charger,Victron,{{specs.alternator.dcdc.model}},Vehicle alternator to house bank charger,1,
-Inverter/Charger,Victron,{{specs.inverter.model}},AC inverter/charger,1,Feeds AC distribution
+Inverter,Victron,{{specs.inverter.model}},AC inverter,1,Feeds AC distribution
 PV Isolator,Generic,DC isolator,PV string isolator,1,Rated per array voltage/current
 12V Fuse Block,Blue Sea,{{specs.low_voltage_distribution.fuse_block}},12-circuit fuse block with negative bus,1,
 Bus Bar (+),Blue Sea,{{specs.low_voltage_distribution.bus_bars.positive}},Positive bus bar,1,Capacity >= 250A
@@ -21,4 +21,6 @@ Lugs and Heatshrink,Generic,As required,For {{specs.wiring.main_cable}} and {{sp
 Main Cabling,Generic,{{specs.wiring.main_cable}},Battery/contactor/inverter runs,As req,Length per layout
 Branch Cabling,Generic,{{specs.wiring.branch_cable}},MPPT and DC-DC runs,As req,Length per layout
 MC4 Connectors,Generic,MC4 pair,Solar connectors,{{specs.pv.panels.count}} pairs,
+
+
 

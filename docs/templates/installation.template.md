@@ -34,7 +34,8 @@ Commissioning
 1. Verify polarity and torque on all terminations.
 2. Close PV isolator and confirm MPPT sees array Voc.
 3. Enable BMS, close contactor (pre-charge if applicable).
-4. Power inverter/charger and verify AC output with no loads.
+4. Power inverter and verify AC output with no loads.
 5. Check charge sources current / voltage.
 6. Record baseline values in shunt/monitoring.
+
 

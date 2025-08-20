@@ -5,7 +5,7 @@ Main Contactor,TE Connectivity,EV200 (12V coil),High-current DC contactor,1,Coil
 Shunt,Victron,SmartShunt 500A,Battery monitor shunt with Bluetooth,1,
 MPPT,Victron,SmartSolar 100/30,Solar charge controller,1,Sized for 2x200W in series
 DC-DC Charger,Victron,Orion-Tr Smart 12/12-30A,Vehicle alternator to house bank charger,1,
-Inverter/Charger,Victron,MultiPlus 12/2000,AC inverter/charger,1,Feeds AC distribution
+Inverter,Victron,Phoenix Inverter Smart 12/1200,AC inverter,1,Feeds AC distribution
 PV Isolator,Generic,DC isolator,PV string isolator,1,Rated per array voltage/current
 12V Fuse Block,Blue Sea,5029,12-circuit fuse block with negative bus,1,
 Bus Bar (+),Blue Sea,2104,Positive bus bar,1,Capacity >= 250A
@@ -22,4 +22,5 @@ Lugs and Heatshrink,Generic,As required,For 2/0 AWG and 6 AWG terminations,1 set
 Main Cabling,Generic,2/0 AWG (70-95 mm2),Battery/contactor/inverter runs,As req,Length per layout
 Branch Cabling,Generic,6 AWG (13 mm2),MPPT and DC-DC runs,As req,Length per layout
 MC4 Connectors,Generic,MC4 pair,Solar connectors,2 pairs,
+
 

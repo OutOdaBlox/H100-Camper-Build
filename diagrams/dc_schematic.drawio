@@ -28,7 +28,7 @@
         <mxCell id="battery2" value="Battery #2" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666;fillColor=#f5f5f5;" parent="layer_wiring" vertex="1"><mxGeometry x="240" y="250" width="100" height="50" as="geometry"/></mxCell>
         <mxCell id="fuse_b1" value="MEGA 100A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="140" y="220" width="60" height="20" as="geometry"/></mxCell>
         <mxCell id="fuse_b2" value="MEGA 100A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="260" y="220" width="60" height="20" as="geometry"/></mxCell>
-        <mxCell id="main_contactor" value="Contactor >=200A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=10;" parent="layer_wiring" vertex="1"><mxGeometry x="360" y="200" width="110" height="30" as="geometry"/></mxCell>
+        <mxCell id="main_contactor" value="Contactor (EV200)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=10;" parent="layer_wiring" vertex="1"><mxGeometry x="360" y="200" width="110" height="30" as="geometry"/></mxCell>
         <mxCell id="smartshunt" value="SmartShunt 500A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=10;" parent="layer_wiring" vertex="1"><mxGeometry x="200" y="440" width="120" height="30" as="geometry"/></mxCell>
 
         <!-- Storage wiring (orthogonal, side entry/exit) -->
@@ -68,7 +68,7 @@
 
         <!-- Loads -->
         <mxCell id="inverter" value="Inverter" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000;fillColor=#fff;fontSize=10;" parent="layer_wiring" vertex="1"><mxGeometry x="520" y="480" width="110" height="40" as="geometry"/></mxCell>
-        <mxCell id="inv_fuse" value="Class-T 200A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="480" y="480" width="80" height="20" as="geometry"/></mxCell>
+        <mxCell id="inv_fuse" value="Class-T 150 A" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b3b3b3;fillColor=#fff2cc;fontSize=9;" parent="layer_wiring" vertex="1"><mxGeometry x="480" y="480" width="80" height="20" as="geometry"/></mxCell>
         <mxCell id="inv_to_fuse" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="inverter" target="inv_fuse" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="invfuse_to_posbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=none;strokeColor=#ff0000;strokeWidth=2;" parent="layer_wiring" source="inv_fuse" target="pos_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="inv_to_negbus" style="edgeStyle=orthogonalEdgeStyle;orthogonalRouting=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;strokeColor=#000000;strokeWidth=2;" parent="layer_wiring" source="inverter" target="neg_bus" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
@@ -109,7 +109,7 @@
         <mxCell id="c_shunt" value="Shunt: Victron SmartShunt 500A" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="624" width="330" height="18" as="geometry"/></mxCell>
         <mxCell id="c_mppt" value="MPPT: Victron SmartSolar 100/30" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="642" width="330" height="18" as="geometry"/></mxCell>
         <mxCell id="c_dcdc" value="DC-DC: Victron Orion-Tr Smart 12/12-30A" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="660" width="330" height="18" as="geometry"/></mxCell>
-        <mxCell id="c_inverter" value="Inverter/Charger: Victron Phoenix Inverter Smart 12/1200" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="678" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_inverter" value="Inverter: Victron Phoenix Inverter Smart 12/1200" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="678" width="330" height="18" as="geometry"/></mxCell>
         <mxCell id="c_isol" value="PV Isolator: DC isolator (per system spec)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="696" width="330" height="18" as="geometry"/></mxCell>
         <mxCell id="c_fuseblk" value="12V Fuse Block: Blue Sea 5029" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="714" width="330" height="18" as="geometry"/></mxCell>
         <mxCell id="c_busbar" value="Bus Bars: Blue Sea 2104 / 2105" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="732" width="330" height="18" as="geometry"/></mxCell>
@@ -124,4 +124,8 @@
     </mxGraphModel>
   </diagram>
 </mxfile>
+
+
+
+
 

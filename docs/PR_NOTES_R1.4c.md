@@ -1,4 +1,4 @@
-# H100 Electrical Full Build Package — Review Notes (R1.4c)
+﻿# H100 Electrical Full Build Package â€” Review Notes (R1.4c)
 
 Date: 2025-08-16  
 PR Type: Documentation package review (no functional code changes)
@@ -13,19 +13,19 @@ PR Type: Documentation package review (no functional code changes)
 - Bill of Materials: `bom/bom.csv`
 
 ## Key Specs Confirmed
-- Batteries: **2 × Valence U27-12**
+- Batteries: **2 Ã— Valence U27-12**
 - External BMS: **JK BMS** (controls **TE EV200** contactor)
 - Shunt: **Victron SmartShunt 500 A**
-- PV: **2 × 200 W** panels in series → roof gland → PV isolator → **Victron SmartSolar 100/30**
+- PV: **2 Ã— 200 W** panels in series â†’ roof gland â†’ PV isolator â†’ **Victron SmartSolar 100/30**
 - DC-DC: **Victron Orion-Tr Smart 12/12-30 A** (isolated)
-- Inverter/Charger: **Victron MultiPlus 12/2000**
+- Inverter: **Victron Phoenix Inverter Smart 12/1200**
 - 12 V Distribution: **Blue Sea 5029**; bus bars **Blue Sea 2104/2105**
 
 ## What to Review
 - Schematic readability (orthogonal routing; labels use white pill style)
-- Contents block (brand/model lines) and PV configuration (2 × 200 W series)
+- Contents block (brand/model lines) and PV configuration (2 Ã— 200 W series)
 - Fuse sizes and wire gauges noted near paths (2/0 AWG main, 6 AWG branches)
-- Safety logic: JK BMS → contactor, coil fused; emergency open behaviour
+- Safety logic: JK BMS â†’ contactor, coil fused; emergency open behaviour
 - Exports present and named correctly (SVG, PNG, A3/A2 PDFs)
 
 ## Checklist
@@ -41,3 +41,4 @@ PR Type: Documentation package review (no functional code changes)
 ### Notes
 - No changes to functional design versus previously agreed **R1.4c**; this PR is to formalise review and sign-off.
 - If any edits are requested (labels, routing, values), please comment inline and we will update the source `.drawio` files and regenerate exports accordingly.
+
