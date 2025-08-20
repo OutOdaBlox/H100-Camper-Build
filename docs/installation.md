@@ -15,7 +15,7 @@ Wiring Notes
 - Main runs: 2/0 AWG for battery/contactor/inverter.
 - MPPT/DC-DC: 6 AWG typical (adjust per length and current).
 - Battery fuses: MEGA 100 A each battery positive.
-- Inverter fuse: Class-T 200 A near + bus.
+- Inverter fuse: Class-T 150 A near + bus.
 - Distribution/MPPT/DC-DC fuses: 60 A typical (adjust per device spec).
 
 PV (2 Ã— 200 W, series)
@@ -40,5 +40,6 @@ Commissioning
 4. Power Phoenix Inverter Smart 12/1200 and verify AC output with no loads.
 5. Check charge sources (MPPT, DC-DC) current and voltage.
 6. Record baseline values in SmartShunt.
+
 
 

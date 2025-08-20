@@ -9,7 +9,7 @@ General
 Protection
 - Battery positives individually fused (MEGA 100 A).
 - Main contactor (TE EV200) used as system disconnect under JK BMS control.
-- Inverter protected by Class-T 200 A near + bus.
+- Inverter protected by Class-T 150 A near + bus.
 - Distribution, MPPT, DC-DC protected by appropriately sized fuses.
 
 BMS/Contactor Logic
@@ -24,4 +24,5 @@ Grounding/Bonding
 PV
 - PV isolator DC-rated; treat connectors live in sunlight.
 - Use UV-rated 10 AWG (6 mm2) PV cable and MC4 connectors.
+
 
