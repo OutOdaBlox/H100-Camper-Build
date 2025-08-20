@@ -109,7 +109,7 @@
         <mxCell id="c_shunt" value="Shunt: Victron SmartShunt 500A" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="624" width="330" height="18" as="geometry"/></mxCell>
         <mxCell id="c_mppt" value="MPPT: Victron SmartSolar 100/30" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="642" width="330" height="18" as="geometry"/></mxCell>
         <mxCell id="c_dcdc" value="DC-DC: Victron Orion-Tr Smart 12/12-30A" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="660" width="330" height="18" as="geometry"/></mxCell>
-        <mxCell id="c_inverter" value="Inverter/Charger: Victron Phoenix Inverter Smart 12/1200" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="678" width="330" height="18" as="geometry"/></mxCell>
+        <mxCell id="c_inverter" value="Inverter: Victron Phoenix Inverter Smart 12/1200" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="678" width="330" height="18" as="geometry"/></mxCell>
         <mxCell id="c_isol" value="PV Isolator: DC isolator (per system spec)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="696" width="330" height="18" as="geometry"/></mxCell>
         <mxCell id="c_fuseblk" value="12V Fuse Block: Blue Sea 5029" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="714" width="330" height="18" as="geometry"/></mxCell>
         <mxCell id="c_busbar" value="Bus Bars: Blue Sea 2104 / 2105" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;" parent="layer_contents" vertex="1"><mxGeometry x="55" y="732" width="330" height="18" as="geometry"/></mxCell>
@@ -124,5 +124,6 @@
     </mxGraphModel>
   </diagram>
 </mxfile>
+
 
 
