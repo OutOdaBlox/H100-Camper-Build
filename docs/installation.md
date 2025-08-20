@@ -37,7 +37,8 @@ Commissioning
 1. Verify polarity and torque on all terminations.
 2. Close PV isolator and confirm MPPT sees array Voc.
 3. Enable JK BMS, close contactor (precharge via controller if applicable).
-4. Power MultiPlus and verify AC output with no loads.
+4. Power Phoenix Inverter Smart 12/1200 and verify AC output with no loads.
 5. Check charge sources (MPPT, DC-DC) current and voltage.
 6. Record baseline values in SmartShunt.
+
 

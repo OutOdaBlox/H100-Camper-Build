@@ -22,3 +22,4 @@ Main Cabling,Generic,{{specs.wiring.main_cable}},Battery/contactor/inverter runs
 Branch Cabling,Generic,{{specs.wiring.branch_cable}},MPPT and DC-DC runs,As req,Length per layout
 MC4 Connectors,Generic,MC4 pair,Solar connectors,{{specs.pv.panels.count}} pairs,
 
+
